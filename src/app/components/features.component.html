@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <h1>Prueba Vixion360</h1>
+    <div class="container">
+        <div class="row" *ngIf="loading">
+            <h3 class="infodata">Datos de la maquina cargados en memoria. Se procedera a hacer la exportación a csv...</h3>
+            <button (click)="downloadFile()">Convertir a CSV</button>
+        </div>
+        <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="large" color="#fff" type="ball-circus" [fullScreen]="true"></ngx-spinner>
+    </div>
+</div>
